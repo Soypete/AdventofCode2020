@@ -18,10 +18,24 @@ fn main() {
     for num in expense_report.iter() {
         for num2 in expense_report.iter() {
             if num + num2 == 2020 {
+                println!("Part 1");
                 println!("{} + {} = 2020", num, num2);
                 println!("Their product is {}", num * num2);
-                return;
+                continue;
             } else {
+            }
+        }
+    }
+    for num in expense_report.iter() {
+        for num2 in expense_report.iter() {
+            for num3 in expense_report.iter() {
+                if num + num2 + num3 == 2020 {
+                    println!("Part 2");
+                    println!("{} + {} + {} = 2020", num, num2, num3);
+                    println!("Their product is {}", num * num2 * num3);
+                    return;
+                } else {
+                }
             }
         }
     }
